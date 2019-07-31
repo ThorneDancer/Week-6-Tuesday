@@ -4,13 +4,13 @@
 
 // Define the breakpoints
 // Small tablets and large smartphones
-$screen-sm-min: 576px;
+$screen-sm-min: 534px;
 
 // Small tablets
-$screen-md-min: 768px;
+$screen-md-min: 737px;
 
 // Large tablets and small desktops
-$screen-lg-min: 992px;
+$screen-lg-min: 957px;
 
 // Large desktops
 $screen-xl-min: 1200px;
@@ -18,3 +18,8 @@ $screen-xl-min: 1200px;
 // Colors
 $white: #fff;
 $black: #000;
+$orange: #FF9041;
+$grey: #171B1A;
+$navGrey: #26271F;
+$search: #B4AB72;
+$green: #616950;

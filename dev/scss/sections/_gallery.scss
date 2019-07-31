@@ -1,3 +1,81 @@
 /* =============
     Gallery
 ============= */
+#gallery {
+    ul {
+        margin: 0 10px 40px;
+        @include sm {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas: "item-1 item-1 item-2 item-2" ". item-3 item-3 .";
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include md {
+            grid-gap: 30px;
+            grid-template-areas: "item-1 item-2 item-3";
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0 15px 90px;
+        }
+
+        li{
+            margin: 10px 0;
+            @include sm{
+                margin: 0;
+            }
+        }
+
+        li:nth-child(1) {
+            background-image: url("../img/gallery/gallery-1.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: item-1;
+            height: 175px;
+            @include sm {
+                height: 200px;
+            }
+            @include md {
+                height: 254px;
+            }
+            @include lg {
+                height: 308px;
+            }
+        }
+
+        li:nth-child(2) {
+            background-image: url("../img/gallery/gallery-2.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: item-2;
+            height: 175px;
+            @include sm {
+                height: 200px;
+            }
+            @include md {
+                height: 254px;
+            }
+            @include lg {
+                height: 308px;
+            }
+        }
+
+        li:nth-child(3) {
+            background-image: url("../img/gallery/gallery-3.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: item-3;
+            height: 175px;
+            @include sm {
+                height: 200px;
+            }
+            @include md {
+                height: 254px;
+            }
+            @include lg {
+                height: 308px;
+            }
+        }
+    }
+}
